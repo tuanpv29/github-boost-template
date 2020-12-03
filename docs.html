@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/82bb699038.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/docs-page.css">
+</head>
+
+<body>
+  <header>
+
+    <nav class="navbar navbar-expand-lg bg-light navbar-light px-0 py-3">
+
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="/img/logo-boost.svg" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbardrop"
+                data-toggle="dropdown">page</a>
+              <div class="dropdown-menu">
+                <div class="row">
+                  <div class="col">
+                    <h5 class="dropdown-header">landings</h5>
+                    <a class="dropdown-item" href="#">apps</a>
+                    <a class="dropdown-item" href="#">course</a>
+                    <a class="dropdown-item" href="#">event</a>
+                    <a class="dropdown-item" href="#">saas</a>
+                    <h5 class="dropdown-header">blog</h5>
+                    <a class="dropdown-item" href="#">listing</a>
+                    <a class="dropdown-item" href="#">article</a>
+                  </div>
+                  <div class="col">
+                    <h5 class="dropdown-header">company</h5>
+                    <a class="dropdown-item" href="#">about</a>
+                    <a class="dropdown-item" href="#">contact</a>
+                    <a class="dropdown-item" href="#">pricing cards</a>
+                    <a class="dropdown-item" href="#">pricing table</a>
+                    <h5 class="dropdown-header">other</h5>
+                    <a class="dropdown-item" href="#">sign up</a>
+                    <a class="dropdown-item" href="#">404</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold" href="style.html">style</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold" href="">docs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container py-5">
+    <div class="row">
+      <div class="col-lg-3">
+
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top mt-1 mb-3">
+          <button type="button" class="btn d-lg-none btn-block btn-outline-dark mb-3 p-3 text-center"
+            data-toggle="collapse" data-target="#demo">Navigation</button>
+
+          <div id="demo" class="collapse navbar-collapse">
+            <dl class="navbar-nav flex-column">
+              <dt><a href="#">GETTING STARTED</a></dt>
+              <dd><a href="#">Introduction</a></dd>
+              <dd><a href="#">Accessibility</a></dd>
+              <dd><a href="#">Changelog</a></dd>
+              <dd><a href="#">Customization</a></dd>
+              <dd><a href="#">Updating</a></dd>
+
+              <dt><a href="#">COMPONENTS</a></dt>
+              <dd><a href="#">Accordion</a></dd>
+              <dd><a href="#">Alerts</a></dd>
+              <dd><a href="#">Avatars</a></dd>
+              <dd><a href="#">Backgrounds</a></dd>
+              <dd><a href="#">Buttons</a></dd>
+              <dd><a href="#">Cards</a></dd>
+              <dd><a href="#">Devices</a></dd>
+              <dd><a href="#">Dropdowns</a></dd>
+              <dd><a href="#">Forms</a></dd>
+              <dd><a href="#">Icons</a></dd>
+              <dd><a href="#">Navbar</a></dd>
+              <dd><a href="#">Pagination</a></dd>
+              <dd><a href="#">Tables</a></dd>
+            </dl>
+          </div>
+        </nav>
+
+
+      </div>
+
+      <div class="col-lg-9">
+        <h1>Introduction</h1>
+        <hr role="presentation" class="border-primary sep text-left ml-0">
+        <p>A quickstart guide for Boost theme.</p>
+
+        <h2>Files structure</h2>
+        <p>Unzip the theme folder and you'll see the next file structure:</p>
+        <ul>
+          <li><code>dist</code> <span>compiled files</span></li>
+          <li><code>src</code> <span>source files</span>
+            <ul>
+              <li><code>assets</code></li>
+              <li><code>pages</code></li>
+              <li><code>template</code></li>
+            </ul>
+          </li>
+          <li><code>gulpfile.js</code></li>
+          <li><code>package.json</code></li>
+          <li><code>README.md</code></li>
+        </ul>
+        <hr>
+
+        <h2>Setup</h2>
+        <p>Theme's dev tools require Node and Gulp CLI. To install Node go to <a href="#">Node.js</a> and follow the
+          instructions. To install <a href="#">Gulp CLI</a> open a terminal window and run the following command:</p>
+        <div class="bg-light mb-4 p-3">npm i gulp-cli -g</div>
+        <p>Then run the following npm command to install all the theme's dependencies:</p>
+        <div class="bg-light mb-4 p-3">npm i</div>
+        <p>Running <strong>gulp</strong> will compile the theme, copy all required files to the dist directory, and will
+          open a browser window to view your site.</p>
+        <div class="bg-light mb-4 p-3">gulp</div>
+        <p>The theme uses <a href="#">Nunjucks</a> as a template engine, basically to include partials (header,
+          footer...). Gulp renders Nunjucks templates to HTML.</p>
+        <p><strong>Note:</strong> If you prefer, you can simply use the compiled files that are in the
+          <strong>dist</strong> folder and bypass the gulp workflow.</p>
+        <hr>
+
+        <h2>Starter template</h2>
+        <p>A guideline for how to structure your pages when building with this theme.</p>
+        <p><strong>Important:</strong> Remember to add the <code>defer</code> attribute in order to execute the scripts
+          after the page has been rendered.</p>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
