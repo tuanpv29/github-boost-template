@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+.alert {
+  background-color: #f8f9fa;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #343a40;
+  text-transform: uppercase;
+}
